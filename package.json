@@ -62,6 +62,10 @@
     "webpack-bundle-size-analyzer": "^2.5.0",
     "webpack-dev-middleware": "^1.8.4"
   },
-  "author": "Di Vashti, Spencer Dezart-Smith",
-  "license": "MIT"
+  "author": "Di Vashti, Spencer Dezart-Smith, Dennison Williams",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dennison-williams-stjames/sji-bdl-client.git"
+  }
 }
