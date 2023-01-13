@@ -1,7 +1,8 @@
-FROM node:14-alpine
+FROM node:7.10-slim
 WORKDIR /usr/src/sji-bdl-client
 COPY package*.json ./
-RUN apk add --update-cache netcat-openbsd automake autoconf g++ libpng-dev make libtool bash
+RUN apt-get update
+RUN apt-get install -y --force-yes dh-autoreconf libpng-dev netcat
 RUN npm install
 COPY . .
 EXPOSE 3000
