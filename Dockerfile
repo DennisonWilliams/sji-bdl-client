@@ -1,9 +1,10 @@
 FROM node:7.10-slim
 WORKDIR /usr/src/sji-bdl-client
 COPY package*.json ./
-RUN apt-get update
-RUN apt-get install -y --force-yes dh-autoreconf libpng-dev netcat
-RUN npm install
 COPY . .
+RUN apt-get update && \
+  apt-get install -y --force-yes dh-autoreconf libpng-dev netcat && \
+  npm install && \
+  ./node_modules/.bin/webpack -d
 EXPOSE 3000
-CMD [ "node", "index.js" ]
+ENTRYPOINT [ "node", "bin/www" ]
