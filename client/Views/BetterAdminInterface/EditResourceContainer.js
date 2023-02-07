@@ -35,7 +35,7 @@ export default class EditResourceContainer extends Component {
   }
 
   fetchResources() {
-    axios.get('https://st-james-bdl-api.herokuapp.com/api/services')
+    axios.get(process.env.API_SERVER +'/api/services')
     .then(data => {
       this.setState({ resources: data.data });
     });
@@ -57,7 +57,7 @@ export default class EditResourceContainer extends Component {
     e.stopPropagation();
     e.preventDefault();
     axios.defaults.headers.common['x-auth'] = sessionStorage.getItem('auth');
-    axios.put(`https://st-james-bdl-api.herokuapp.com/api/services/${this.state.id}`, data)
+    axios.put(process.env.API_SERVER +`/api/services/${this.state.id}`, data)
     .then(() => {
 
       browserHistory.push('/support');
@@ -86,7 +86,7 @@ export default class EditResourceContainer extends Component {
     e.stopPropagation();
     e.preventDefault();
     axios.defaults.headers.common['x-auth'] = sessionStorage.getItem('auth');
-    axios.delete(`https://st-james-bdl-api.herokuapp.com/api/services/${this.state.id}`, data)
+    axios.delete(process.env.API_SERVER +`/api/services/${this.state.id}`, data)
     .then(() => {
       browserHistory.push('/support');
     })

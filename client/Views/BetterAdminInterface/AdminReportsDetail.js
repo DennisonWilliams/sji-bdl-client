@@ -33,7 +33,7 @@ class AdminReportsDetail extends Component {
       headers: { 'x-auth': jwt }
     };
 
-    axios.get('https://st-james-bdl-api.herokuapp.com/api/admins/reports', config)
+    axios.get(process.env.API_SERVER +'/api/admins/reports', config)
       .then((response) => {
         this.setState({
           reports: response.data,

@@ -41,7 +41,7 @@ export default class ResourcesContainer extends Component {
   }
 
   fetchResources() {
-    axios.get('https://st-james-bdl-api.herokuapp.com/api/services')
+    axios.get(process.env.API_SERVER +'/api/services')
     .then((res) => {
 
       this.setState((prevState) => {
