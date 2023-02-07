@@ -19,7 +19,7 @@ export default class AdminLogin extends Component {
   }
 
   handleSubmitButtonTap() {
-    axios.post('https://st-james-bdl-api.herokuapp.com/api/admins/login', {
+    axios.post(process.env.API_SERVER +'/api/admins/login', {
       email: this.refs.email.getValue(),
       password: this.refs.password.getValue()
     })

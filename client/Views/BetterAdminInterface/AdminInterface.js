@@ -100,7 +100,7 @@ export default class AdminInterface extends Component {
 
   logOut() {
     axios.defaults.headers.common['x-auth'] = sessionStorage.getItem('auth');
-    axios.delete('https://st-james-bdl-api.herokuapp.com/api/admins/logout')
+    axios.delete(process.env.API_SERVER +'/api/admins/logout')
       .then(() => {
         browserHistory.push('/');
         sessionStorage.clear();

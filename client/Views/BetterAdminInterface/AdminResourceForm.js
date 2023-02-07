@@ -24,7 +24,7 @@ export default class AdminResourceForm extends Component {
   handleOnSubmit() {
     const data = this.state;
     axios.defaults.headers.common['x-auth'] = sessionStorage.getItem('auth');
-    axios.post('https://st-james-bdl-api.herokuapp.com/api/services', data)
+    axios.post(process.env.API_SERVER +'/api/services', data)
     .then((res) => {
       // show a success message to user
       setTimeout(() => {

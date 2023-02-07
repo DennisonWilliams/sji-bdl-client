@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const jsonLoader = require('json-loader');
 const BUILD_DIR = path.resolve(__dirname, 'public')
 const APP_DIR = path.resolve(__dirname, 'client')
+const Dotenv = require('dotenv-webpack');
 
 const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
   template: __dirname + '/client/index.html',
@@ -39,7 +40,7 @@ var config = {
     path: BUILD_DIR,
     filename: 'bundle.js'
   },
-  plugins: [HTMLWebpackPluginConfig]
+  plugins: [HTMLWebpackPluginConfig, new Dotenv()]
 }
 
 module.exports = config
