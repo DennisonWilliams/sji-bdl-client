@@ -63,7 +63,7 @@ export default class AdminFormContainer extends Component {
     // fetch title content
     axios.get(process.env.API_SERVER +`/api/reports/${this.props.report._id}`, config)
     .then(data => {
-      if (data.data.editedReport.title.length !== 0) {
+      if (data.data && data.data.editedReport && data.data.editedReport.title && data.data.editedReport.title.length !== 0) {
         if (data.data.edited === true) {
           this.setState({ value: 2 });
         } else {
