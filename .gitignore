@@ -56,3 +56,10 @@ typings/
 
 # dotenv environment variables file
 .env
+
+public/bundle.js
+public/bundle.js.map
+public/index.html
+
+debug.txt
+*.swp
