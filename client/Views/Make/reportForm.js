@@ -2,7 +2,6 @@ import React, { Component }  from 'react'
 import PropTypes from 'prop-types';
 import { Link, browserHistory } from 'react-router';
 import axios from 'axios';
-import {Gmaps, Marker, InfoWindow, Circle} from '../../../react-gmaps'
 
 import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
@@ -78,12 +77,6 @@ export default class ReportForm extends Component {
     this.onDragEnd = this.onDragEnd.bind(this)
     this.handleSubmitOnFinishBtnTap = this.handleSubmitOnFinishBtnTap.bind(this);
     this.validateForm = this.validateForm.bind(this)
-  }
-
-  onMapCreated(map) {
-    map.setOptions({
-      disableDefaultUI: false
-    });
   }
 
   onDragEnd(e) {
@@ -355,29 +348,6 @@ export default class ReportForm extends Component {
                 rows={3} />
             </Form>
             <br/>
-          </div>
-        )
-      case 3:
-        return(
-          <div className='form-container'>
-            <h3>Please drag the pin to the approximate location where the incident occured</h3>
-            <h5>You can zoom in to add a more specific location</h5>
-            <div className='map-container'>
-              <Gmaps
-                height={'100%'}
-                lat={coords.lat}
-                lng={coords.lng}
-                zoom={12}
-                loadingMessage={'Map Loading'}
-                params={params}
-                onMapCreated={this.onMapCreated}>
-                <Marker
-                  lat={coords.lat}
-                  lng={coords.lng}
-                  draggable={true}
-                  onDragEnd={this.onDragEnd} />
-              </Gmaps>
-            </div>
           </div>
         )
       default:
