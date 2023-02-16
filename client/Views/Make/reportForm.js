@@ -130,7 +130,7 @@ export default class ReportForm extends Component {
     const {stepIndex} = this.state;
     this.setState({
       stepIndex: stepIndex + 1,
-      finished: stepIndex >= 3,
+      finished: stepIndex >= 2,
     });
     scroll(0,0)
   };
@@ -408,8 +408,6 @@ export default class ReportForm extends Component {
       this.setState({errors: true})
     } else if ((this.state.stepIndex === 1) && (!name || !perpType || !gender || !age || !race || !height || !hair )){
       this.setState({errors: true})
-    } else if (this.state.stepIndex === 3 && (coordinates.length === 0)){
-      this.setState({errors: true})
     } else {
       this.setState({errors: false})
       this.handleNext()
@@ -425,9 +423,6 @@ export default class ReportForm extends Component {
         <div style={{width: '100%', maxWidth: 700, margin: 'auto', paddingBottom: 65, paddingTop: 20}}>
           <Paper zDepth={1} >
               <Stepper activeStep={stepIndex}>
-                <Step>
-                  <StepLabel></StepLabel>
-                </Step>
                 <Step>
                   <StepLabel></StepLabel>
                 </Step>
@@ -454,9 +449,9 @@ export default class ReportForm extends Component {
                       style={{marginRight: 12}}
                     />
                     <RaisedButton
-                      label={stepIndex === 3 ? 'Finish' : 'Next'}
+                      label={stepIndex === 2 ? 'Finish' : 'Next'}
                       primary={true}
-                      onTouchTap={stepIndex === 3 ? this.handleSubmitOnFinishBtnTap : this.validateForm}
+                      onTouchTap={stepIndex === 2 ? this.handleSubmitOnFinishBtnTap : this.validateForm}
                     />
                   </div>
                 </div>
