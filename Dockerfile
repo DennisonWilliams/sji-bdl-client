@@ -1,4 +1,4 @@
-FROM node:7.10-slim
+FROM node:14.0.0-slim
 WORKDIR /usr/src/sji-bdl-client
 COPY package*.json ./
 COPY . .
