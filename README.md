@@ -1,4 +1,4 @@
-# sj-bdl-client
+# St. James Infirmary Bad Date List Client
 
 A web application frontend for the San Francisco Bad Date List (BDL) maintained by [St. James Infirmary](https://stjamesinfirmary.org) (SJI).
 
