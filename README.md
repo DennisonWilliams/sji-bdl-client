@@ -19,5 +19,5 @@ in two different shell windows
 ## Contributing
 
 ## Notes:
-The original author of this code was (Diana Vashti)[https://github.com/DianaVashti/], a talented developer, who is missed.  R.I.P.
+The original author of this code was [Diana Vashti](https://github.com/DianaVashti/), a talented developer, who is missed.  R.I.P.
 
