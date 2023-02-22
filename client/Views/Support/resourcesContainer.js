@@ -19,7 +19,6 @@ import TextField from 'material-ui/TextField';
 import Footer from '../../footer'
 import Header from '../../header'
 import Spinner from '../../Spinner/index'
-require('dotenv').config();
 
 const iconStyles = {
   marginRight: 24,

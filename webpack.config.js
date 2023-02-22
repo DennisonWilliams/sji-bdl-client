@@ -40,7 +40,8 @@ var config = {
     path: BUILD_DIR,
     filename: 'bundle.js'
   },
-  plugins: [HTMLWebpackPluginConfig, new Dotenv()]
+  plugins: [HTMLWebpackPluginConfig, new Dotenv()],
+  target: 'node'
 }
 
 module.exports = config

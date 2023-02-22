@@ -8,7 +8,6 @@ import Textarea from 'simple-react-form-material-ui/lib/textarea'
 
 import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
 import RaisedButton from 'material-ui/FlatButton';
-require('dotenv').config();
 
 export default class EditResourceContainer extends Component {
   constructor(props) {

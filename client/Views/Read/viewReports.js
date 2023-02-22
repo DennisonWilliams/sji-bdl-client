@@ -2,7 +2,6 @@ import React, {Component}  from 'react'
 import PropTypes from 'prop-types';
 import {Link} from 'react-router'
 import axios from 'axios';
-require('dotenv').config();
 
 import Paper from 'material-ui/Paper';
 import RaisedButton from 'material-ui/RaisedButton';
