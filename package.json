@@ -1,6 +1,7 @@
 {
   "name": "sji-bdl-client",
-  "version": "1.0.0",
+  "private": true,
+  "version": "1.0.1",
   "engines": {
     "node": "^14.0.0",
     "npm": "4.2.0"
@@ -71,5 +72,10 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/dennison-williams-stjames/sji-bdl-client.git"
+  },
+  "devDependencies": {
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-15": "^1.4.4",
+    "jest": "^23.6.0"
   }
 }

@@ -6,6 +6,7 @@ import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
 import TextField from 'material-ui/TextField';
 
+require('dotenv').config();
 /**
  * A modal dialog can only be closed by selecting one of the actions.
  */

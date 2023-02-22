@@ -9,6 +9,7 @@ import Header from './Header';
 import AdminReportsDetail from './AdminReportsDetail';
 import AdminResourceForm from './AdminResourceForm';
 import EditResourceContainer from './EditResourceContainer';
+require('dotenv').config();
 
 const styles = {
   viewStyle: {

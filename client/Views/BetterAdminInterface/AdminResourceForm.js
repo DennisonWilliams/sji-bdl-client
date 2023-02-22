@@ -6,6 +6,7 @@ import Text from 'simple-react-form-material-ui/lib/text';
 import { Form, Field } from 'simple-react-form';
 
 import RaisedButton from 'material-ui/RaisedButton';
+require('dotenv').config();
 
 export default class AdminResourceForm extends Component {
   constructor(props) {
