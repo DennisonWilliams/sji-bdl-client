@@ -10,17 +10,23 @@ Users start on the landing page where they have the opportunity to 'make a repor
 ![landing page](https://raw.githubusercontent.com/dennison-williams-stjames/sji-bdl-client/top/public/images/Screenshots/Home.png)
 
 Users submitting reports start on the Incident Details page.
+
 ![incident details page 1](https://raw.githubusercontent.com/dennison-williams-stjames/sji-bdl-client/top/public/images/Screenshots/IncidentDetails.png)
+
 ![incident details page 2](https://raw.githubusercontent.com/dennison-williams-stjames/sji-bdl-client/top/public/images/Screenshots/IncidentDetails2.png)
 
 The next step in submitting a report is the Perpetrator Details page.
+
 ![perpetrator details page 1](https://raw.githubusercontent.com/dennison-williams-stjames/sji-bdl-client/top/public/images/Screenshots/PerpetratorDetails.png)
+
 ![perpetrator details page 2](https://raw.githubusercontent.com/dennison-williams-stjames/sji-bdl-client/top/public/images/Screenshots/PerpetratorDetails2.png)
 
 The last step in submitting a report is finding out what kind of support is being requested.
+
 ![support details page](https://raw.githubusercontent.com/dennison-williams-stjames/sji-bdl-client/top/public/images/Screenshots/SupportDetails.png)
 
 There is an admin interface for managing the submitted reports after authenticating.
+
 ![login page](https://raw.githubusercontent.com/dennison-williams-stjames/sji-bdl-client/top/public/images/Screenshots/LogIn.png)
 
 Admins can see a list of all submitted reports.
