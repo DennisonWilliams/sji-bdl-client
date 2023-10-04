@@ -24,9 +24,11 @@ There is an admin interface for managing the submitted reports after authenticat
 ![login page](https://raw.githubusercontent.com/dennison-williams-stjames/sji-bdl-client/top/public/images/Screenshots/LogIn.png)
 
 Admins can see a list of all submitted reports.
+
 ![admin report list](https://raw.githubusercontent.com/dennison-williams-stjames/sji-bdl-client/top/public/images/Screenshots/AdminReportList.png)
 
 Admins can edit and publish submitted reports.
+
 ![admin report edit](https://raw.githubusercontent.com/dennison-williams-stjames/sji-bdl-client/top/public/images/Screenshots/AdminReportEdit.png)
 
 ## Notes:
