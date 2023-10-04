@@ -21,7 +21,7 @@ The last step in submitting a report is finding out what kind of support is bein
 ![support details page](https://raw.githubusercontent.com/dennison-williams-stjames/sji-bdl-client/top/public/images/Screenshots/SupportDetails.png)
 
 There is an admin interface for managing the submitted reports after authenticating.
-![login page](https://raw.githubusercontent.com/dennison-williams-stjames/sji-bdl-client/top/public/images/Screenshots/Login.png)
+![login page](https://raw.githubusercontent.com/dennison-williams-stjames/sji-bdl-client/top/public/images/Screenshots/LogIn.png)
 
 Admins can see a list of all submitted reports.
 ![admin report list](https://raw.githubusercontent.com/dennison-williams-stjames/sji-bdl-client/top/public/images/Screenshots/AdminReportList.png)
