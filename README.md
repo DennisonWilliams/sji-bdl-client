@@ -7,6 +7,7 @@ Configureation variables are expected to be set in .env files and passed to dock
 ## Application tour
 
 Users start on the landing page where they have the opportunity to 'make a report', 'Read a report', 'Get support' and recieve instructions on how to add a bookmark for the mobile application.
+
 ![landing page](https://raw.githubusercontent.com/dennison-williams-stjames/sji-bdl-client/top/public/images/Screenshots/Home.png)
 
 Users submitting reports start on the Incident Details page.
